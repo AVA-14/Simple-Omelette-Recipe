@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+/* 
+font-family: "Young Serif", serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+:root {
+    --stone100: hsl(30, 54%, 90%);
+    --stone150: hsl(30, 18%, 87%);
+    --stone600: hsl(30, 10%, 34%);
+    --stone900: hsl(24, 5%, 18%);
+    --brown: hsl(14, 45%, 36%);
+    --rose800: hsl(332, 51%, 32%);
+    --rose50: hsl(330, 100%, 98%);
+}
+
+.content {
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.content > *:not(img) {
+    margin: 30px 10%;
+}
+
+.content p {
+    font-size: 16px;
+}
+
+.content img {
+    width: -webkit-fill-available;
+}
+
+.content h1 ,
+.content div h2 {
+    font-family: "Young Serif", serif;
+    text-transform: capitalize;
+}
+
+.content div h2 {
+    color: var(--brown);
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+.content h1 {
+    line-height: 1.2;
+    color: var(--stone900);
+}
+
+.content > :nth-child(3) {
+    color: var(--stone600);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.content li {
+    padding-left: 15px;
+}
+
+.content ul,
+.content ol {
+    padding-left: 35px;
+}
+
+.content .pre-time {
+    background-color: var(--rose50);
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.content .pre-time h3 {
+    padding-bottom: 10px;
+    color: var(--rose800);
+}
+
+.content .pre-time ul {
+    line-height: 1.8;
+    color: var(--rose800);
+    font-weight: 600;
+}
+
+.content .pre-time ul li p {
+    color: var(--stone600);
+}
+
+.content .pre-time ul span {
+    font-weight: 400;
+}
+
+.content .ingre ul {
+    color: var(--brown);
+}
+
+.content .ingre ul li p{
+    color: var(--stone600);
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.content .instru ol {
+    color: var(--brown);
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.content .instru ol li p span {
+    font-weight: 700;
+}
+
+.content .instru ol li p {
+    color: var(--stone600);
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.content .nutri {
+    color: var(--stone600);
+    line-height: 1.5;
+}
+
+.content > p:not(p:first-of-type) {
+    padding-left: 30px;
+    font-weight: 400;
+    color: var(--stone600);
+}
+
+.content .one {
+    word-spacing: 100px;
+}
+
+.content .two {
+    word-spacing: 118px;
+}
+
+.content .three {
+    word-spacing: 110px;
+}
+
+.content .four {
+    word-spacing: 138px;
+}
+
+.content > p:not(p:first-of-type) span {
+    color: var(--brown);
+    font-weight: 700;
+}
+
+@media (min-width: 767px) {
+    .content {
+        margin: 7% auto;
+        padding: 30px;
+        width: 50%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    body {
+        background-color: var(--stone100);
+    }
+    .content img {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .content>*:not(img) {
+        margin: 30px 0;   
+    }
+    .content .one {
+        word-spacing: 220px;
+    }
+
+    .content .two {
+        word-spacing: 238px;
+    }
+
+    .content .three {
+        word-spacing: 230px;
+    }
+
+    .content .four {
+        word-spacing: 258px;  
+    }
+}
